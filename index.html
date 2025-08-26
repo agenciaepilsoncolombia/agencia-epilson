@@ -3,139 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agencia Epsilon - La verdad no se esconde para siempre</title>
+  <title>Agencia Épsilon - Investigación Privada</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #0d0d0d;
-      color: #f1f1f1;
-      line-height: 1.6;
+      background-color: #0a0f1c; /* Azul marino oscuro */
+      color: #f5f5f5;
     }
+
     header {
-      background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      height: 100vh;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      background-color: #111729; /* un poco más claro que el fondo */
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header .contacto {
+      text-align: right;
+      font-size: 14px;
+    }
+
+    header .contacto p {
+      margin: 2px 0;
+    }
+
+    .hero {
       text-align: center;
-      color: #fff;
-      position: relative;
+      padding: 80px 20px;
     }
-    header::after {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.6);
+
+    .hero h1 {
+      font-size: 2.5em;
+      color: #e6b800; /* dorado elegante */
     }
-    header h1, header p, header a {
-      position: relative;
-      z-index: 1;
+
+    .hero p {
+      font-size: 1.2em;
+      color: #ccc;
     }
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
+
+    .cta {
+      margin-top: 20px;
     }
-    header p {
-      font-size: 1.3rem;
-      margin: 10px 0 20px;
-    }
-    .btn {
-      background: #d4af37;
-      color: #000;
+
+    .cta a {
+      text-decoration: none;
+      background-color: #e6b800;
+      color: #111;
       padding: 12px 25px;
       border-radius: 5px;
-      text-decoration: none;
       font-weight: bold;
-      transition: 0.3s;
     }
-    .btn:hover {
-      background: #f1c40f;
-    }
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.7);
-    }
-    .card h3 {
-      color: #d4af37;
-    }
-    .contacto {
-      background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      color: #fff;
-      padding: 60px 20px;
-      position: relative;
-    }
-    .contacto::after {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0,0,0,0.7);
-    }
-    .contacto h2, .contacto p {
-      position: relative;
-      z-index: 1;
-    }
-    .contact-info {
-      font-size: 1.5rem;
-      margin: 20px 0;
-    }
+
     footer {
-      background: #000;
       text-align: center;
       padding: 20px;
-      font-size: 0.9rem;
-      color: #aaa;
+      background-color: #111729;
+      font-size: 14px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Agencia Epsilon</h1>
-    <p>"La verdad no se esconde para siempre"</p>
-    <a href="#contacto" class="btn">Descubre la verdad ahora</a>
+    <!-- Logo -->
+    <img src="logo.png" alt="Agencia Épsilon Logo">
+
+    <!-- Teléfono y correo -->
+    <div class="contacto">
+      <p>📞 320 982 9626</p>
+      <p>📧 agencia.epilson.colombia@gmail.com</p>
+    </div>
   </header>
 
-  <section>
-    <h2>Nuestros Servicios</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Investigación de Infidelidades</h3>
-        <p>Confirmamos sospechas con absoluta confidencialidad y pruebas reales.</p>
-      </div>
-      <div class="card">
-        <h3>Seguimiento Discreto</h3>
-        <p>Monitoreo profesional sin dejar rastro, con resultados claros.</p>
-      </div>
-      <div class="card">
-        <h3>Asesoría Personalizada</h3>
-        <p>19 años de experiencia en inteligencia a tu servicio.</p>
-      </div>
+  <section class="hero">
+    <h1>Agencia Épsilon</h1>
+    <p>"La verdad no se esconde para siempre"</p>
+    <div class="cta">
+      <a href="mailto:agencia.epilson.colombia@gmail.com">Contáctanos</a>
     </div>
   </section>
 
-  <section id="contacto" class="contacto">
-    <h2>Contacto Confidencial</h2>
-    <p class="contact-info">📱 320 982 9626</p>
-    <p class="contact-info">✉️ agencia.epilson.colombia@gmail.com</p>
-    <a href="mailto:agencia.epilson.colombia@gmail.com" class="btn">Escríbenos ahora</a>
-  </section>
-
   <footer>
-    <p>© 2025 Agencia Epsilon - Confidencialidad garantizada</p>
+    © 2025 Agencia Épsilon - Todos los derechos reservados
   </footer>
-
 </body>
 </html>
