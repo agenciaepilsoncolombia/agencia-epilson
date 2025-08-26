@@ -1,51 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agencia Epilson</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agencia Epsilon - Detectives Privados</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0f172a;
+      color: white;
+    }
+    header {
+      background: #1e293b;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #38bdf8;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+      color: #f1f5f9;
+    }
+    nav {
+      background: #334155;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #0ea5e9, #1e293b);
+    }
+    .hero h2 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+    }
+    .hero button {
+      padding: 12px 25px;
+      font-size: 1em;
+      background: #38bdf8;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .hero button:hover {
+      background: #0ea5e9;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .section h3 {
+      color: #38bdf8;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(56,189,248,0.5);
+    }
+    .card h4 {
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+    footer {
+      background: #0f172a;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #94a3b8;
+    }
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <!-- Encabezado -->
-  <header class="bg-gray-900 text-white p-6 shadow-md">
-    <h1 class="text-3xl font-bold text-center">Agencia Epilson</h1>
-    <p class="text-center text-gray-300">La verdad no se esconde para siempre</p>
+<body>
+  <header>
+    <h1>Agencia Epsilon</h1>
+    <p>"La verdad no se esconde para siempre"</p>
   </header>
+  
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-  <!-- Sección principal -->
-  <main class="max-w-3xl mx-auto p-8">
-    <section class="bg-white p-6 rounded-2xl shadow-md mb-6">
-      <h2 class="text-2xl font-semibold mb-4">¿Quiénes somos?</h2>
-      <p class="mb-4">
-        Somos una agencia privada especializada en investigaciones discretas y profesionales. 
-        Nuestro objetivo es brindarle claridad y confianza a nuestros clientes.
-      </p>
-    </section>
+  <section class="hero">
+    <h2>Investigación Privada y Confidencial</h2>
+    <p>Profesionales en descubrir la verdad con total discreción</p>
+    <button onclick="window.location.href='#contacto'">Contáctanos</button>
+  </section>
 
-    <section class="bg-white p-6 rounded-2xl shadow-md mb-6">
-      <h2 class="text-2xl font-semibold mb-4">Nuestros servicios</h2>
-      <ul class="list-disc pl-6 space-y-2">
-        <li>Investigaciones personales y familiares</li>
-        <li>Detección de infidelidades</li>
-        <li>Verificación de antecedentes</li>
-        <li>Asesoría en seguridad y prevención</li>
-      </ul>
-    </section>
+  <section class="section" id="servicios">
+    <h3>Nuestros Servicios</h3>
+    <div class="services">
+      <div class="card">
+        <h4>Investigaciones de Infidelidad</h4>
+        <p>Confirmamos o descartamos sospechas con pruebas reales.</p>
+      </div>
+      <div class="card">
+        <h4>Investigación Corporativa</h4>
+        <p>Protegemos su empresa de fraudes y engaños internos.</p>
+      </div>
+      <div class="card">
+        <h4>Localización de Personas</h4>
+        <p>Rastreo efectivo con metodologías modernas.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="bg-white p-6 rounded-2xl shadow-md text-center">
-      <h2 class="text-2xl font-semibold mb-4">Contáctanos</h2>
-      <p class="mb-4">Tu privacidad es nuestra prioridad. Escríbenos de forma segura a nuestro correo:</p>
-      <a href="mailto:agencia.epilson.colombia@gmail.com?subject=Consulta%20—%20Agencia%20Epilson" 
-         class="px-6 py-3 bg-blue-600 text-white rounded-2xl shadow-md hover:bg-blue-700">
-         📧 Escríbenos
-      </a>
-    </section>
-  </main>
+  <section class="section" id="contacto">
+    <h3>Contacto</h3>
+    <p>📞 Teléfono: <strong>+57 320 982 9626</strong></p>
+    <p>📧 Email: <a href="mailto:agencia.epilson.colombia@gmail.com">agencia.epilson.colombia@gmail.com</a></p>
+  </section>
 
-  <!-- Pie de página -->
-  <footer class="bg-gray-900 text-white text-center p-4 mt-6">
-    <p>&copy; 2025 Agencia Epilson — Todos los derechos reservados.</p>
+  <footer>
+    <p>© 2025 Agencia Epsilon | Todos los derechos reservados</p>
   </footer>
 </body>
 </html>
