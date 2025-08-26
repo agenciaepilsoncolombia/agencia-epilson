@@ -1,177 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agencia Épsilon - Investigación Privada en Colombia</title>
-  <meta name="description" content="Agencia Épsilon: Investigación privada profesional en Colombia. Especialistas en casos de infidelidad, búsqueda de personas y vigilancia discreta.">
-  <meta name="keywords" content="investigación privada, infidelidad, detectives privados, búsqueda de personas, vigilancia, Agencia Épsilon, Colombia">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agencia Épsilon</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0a0f1c;
-      color: #f5f5f5;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #111729;
-      padding: 10px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    header img {
-      height: 50px;
-    }
-
-    header .contacto {
-      text-align: right;
-      font-size: 14px;
-    }
-
-    header .contacto p {
-      margin: 2px 0;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-    }
-
-    .hero h1 {
-      font-size: 2.5em;
-      color: #e6b800;
-    }
-
-    .hero p {
-      font-size: 1.2em;
-      color: #ccc;
-    }
-
-    .cta {
-      margin-top: 20px;
-    }
-
-    .cta a {
-      text-decoration: none;
-      background-color: #e6b800;
-      color: #111;
-      padding: 12px 25px;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .cta a:hover {
-      background-color: #cfa600;
-      transition: background-color 0.3s ease;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    h2 {
-      color: #e6b800;
-      margin-bottom: 20px;
-    }
-
-    .servicios ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .servicios li {
-      background-color: #111729;
-      margin-bottom: 10px;
-      padding: 15px;
-      border-left: 5px solid #e6b800;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #111729;
-      font-size: 14px;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-      }
-
-      header .contacto {
-        text-align: left;
-        margin-top: 10px;
-      }
-
-      .hero h1 {
-        font-size: 2em;
-      }
-
-      .hero p {
-        font-size: 1em;
-      }
-    }
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9fafb; color:#333; }
+    header { background:#0a3d62; color:#fff; padding:1rem; text-align:center; }
+    header h1 { margin:0; font-size:1.5rem; }
+    header p { margin:0; font-size:0.9rem; opacity:0.8; }
+    section { padding:2rem 1rem; max-width:800px; margin:auto; }
+    h2 { color:#0a3d62; margin-bottom:1rem; }
+    .servicios { display:grid; gap:1rem; }
+    .servicio { background:#fff; padding:1rem; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.1); }
+    footer { background:#eee; text-align:center; padding:1rem; font-size:0.85rem; margin-top:2rem; }
+    a { color:#0a3d62; text-decoration:none; }
+    .contacto p { margin:0.5rem 0; }
   </style>
 </head>
 <body>
-
-  <!-- Encabezado -->
   <header>
-    <img src="logo.png" alt="Logo de la Agencia Épsilon">
-    <div class="contacto">
-      <p>📞 320 982 9626</p>
-      <p>📧 agencia.epsilon.colombia@gmail.com</p>
-    </div>
+    <h1>Agencia Épsilon</h1>
+    <p>Inteligencia de fuentes abiertas para decisiones seguras</p>
   </header>
 
-  <!-- Hero principal -->
-  <section class="hero">
-    <h1>Agencia Épsilon</h1>
-    <p>"La verdad no se esconde para siempre"</p>
-    <div class="cta">
-      <a href="mailto:agencia.epsilon.colombia@gmail.com">Contáctanos</a>
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="servicios">
+      <div class="servicio">
+        <h3>OSINT</h3>
+        <p>Análisis de información pública en redes sociales, registros y medios digitales.</p>
+      </div>
+      <div class="servicio">
+        <h3>Due Diligence</h3>
+        <p>Detectamos infidelidades.</p>
+      </div>
+      <div class="servicio">
+        <h3>Reputación Digital</h3>
+        <p>Monitoreo de presencia en línea y prevención de fraudes.</p>
+      </div>
+      <div class="servicio">
+        <h3>Capacitación</h3>
+        <p>Talleres y asesoría en inteligencia de fuentes abiertas y seguridad digital.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Sección de Servicios -->
-  <section class="servicios">
-    <h2>Servicios de Investigación Privada</h2>
-    <ul>
-      <li><strong>Investigación de infidelidades:</strong> Detectamos indicios de traición o doble vida. Entregamos pruebas fotográficas y videográficas si es necesario.</li>
-      <li><strong>Búsqueda de personas:</strong> Localizamos personas desaparecidas, deudas pendientes, familiares perdidos o contactos evasivos.</li>
-      <li><strong>Vigilancia discreta:</strong> Seguimientos profesionales sin ser detectados. Observación estratégica en tiempo real.</li>
-      <li><strong>Verificación de antecedentes:</strong> Investigamos historial personal, laboral o legal de individuos o empresas.</li>
-      <li><strong>Monitoreo digital:</strong> Rastreo y análisis de actividad online (cuando es legalmente posible y autorizado).</li>
-    </ul>
+  <section id="nosotros">
+    <h2>Quiénes somos</h2>
+    <p>Agencia Épsilon está conformada por profesionales con experiencia en análisis de inteligencia y seguridad. Nuestro compromiso es entregar información confiable y ética para apoyar la toma de decisiones.</p>
   </section>
 
-  <!-- Sobre nosotros -->
-  <section class="sobre">
-    <h2>¿Quiénes somos?</h2>
-    <p>
-      Somos <strong>Agencia Épsilon</strong>, un equipo especializado en inteligencia privada y vigilancia estratégica. 
-      Trabajamos con total discreción, profesionalismo y compromiso con la verdad. Nuestro objetivo es ayudarte a obtener las respuestas que mereces, con pruebas reales y confidenciales.
-    </p>
-    <p>
-      Atendemos en todo el territorio colombiano, las 24 horas del día. 
-    </p>
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Teléfono:</strong> 320 982 9626</p>
+    <p><strong>Correo:</strong> <a href="mailto:agencia.epilson.colombia@gmail.com">agencia.epilson.colombia@gmail.com</a></p>
+    <p><strong>Ubicación:</strong> Colombia · Atención nacional</p>
   </section>
 
-  <!-- Pie de página -->
   <footer>
-    © 2025 Agencia Épsilon - Todos los derechos reservados
+    © 2025 Agencia Épsilon · Solo información pública · Actuamos conforme a la ley colombiana
   </footer>
-
 </body>
 </html>
